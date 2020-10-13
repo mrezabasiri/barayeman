@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume/CV Design</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<link type="text/css" rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");
+
+				var datali = $(this).attr("data-li");
+
+				$(".full_info_item").hide();
+
+				if(datali == "experience"){
+					$(".experience").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Laoding...");
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+
+<div class="wrapper">
+   <div class="resume">
+
+       <div class="profile_info">
+            <div class="profile_img">
+              <img src="profile_pic.png" alt="profile_img">
+            </div>
+            <div class="profile_data">
+                <p class="name">محمدرضا بصیری</p>
+                <span>ایران، تهران<i style="margin-left: 5px" class="fas fa-map-marker-alt"></i></span>
+            </div>
+            <div class="view_more_btn">
+              <a href="#">اطلاعات بیشتر</a>
+            </div>
+        </div>
+
+       <div class="skills">
+	       <div class="title" style=" direction: rtl; text-align: right">
+	          مهارت های من:
+	       </div>
+	       <ul>
+	         <li>
+	           <div class="skill_item html">
+	             <div class="icon"></div>
+	             <div class="text">HTML</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item css">
+	             <div class="icon"></div>
+	             <div class="text">CSS</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item js">
+	             <div class="icon"></div>
+	             <div class="text">موشن گرافیک</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item photoshop">
+	             <div class="icon"></div>
+	             <div class="text">فتوشاپ</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item angular">
+	             <div class="icon"></div>
+	             <div class="text">آفیس</div>
+	           </div>
+	         </li>
+	         <li>
+	           <div class="skill_item react">
+	             <div class="icon"></div>
+	             <div class="text">نقاشی</div>
+	           </div>
+	         </li>
+	       </ul>
+	    </div>
+
+        <div class="full_info_wrap">
+            <div class="tabs">
+                <ul dir="rtl">
+                    <li data-li="experience" class="active">تجربه کاری من</li>
+                    <li data-li="education">تحصیلات من</li>
+                    <li data-li="contact">راه های ارتباطی</li>
+                </ul>
+            </div>
+
+            <div class="full_info">
+                <div class="full_info_item experience" style=" direction: rtl; text-align: right">
+                    <div class="title">سوابق کاری من:</div>
+                    <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				1393_1395
+                    			</div>
+
+								<div class="info_item">
+									<div class="info_title">
+										مشغول به ساخت کتاب اندرویدی
+									</div>
+									<div class="data">
+									ساخت کتاب اندرویدی به سوی کامیابی و انتشار آن در کافه بازار
+
+									ساخت برنامه اندرویدی استاد رائفی پور و جمع آوری سخنرانی های ایشان و انتشار آن در مایکت
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				1395_1397
+                    			</div>
+
+								<div class="info_item">
+									<div class="info_title">
+										طراحی موشن گرافیک و ساخت کاراکتر
+									</div>
+									<div class="data">
+									 adob illustrator یادگیری نرم افزار
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				1397_...
+                    			</div>
+
+								<div class="info_item">
+									<div class="info_title">
+										دانشجو
+									</div>
+									<div class="data">
+										در حال حاظر دانشجو هستم و دو سال مانده به فارق تحصیلی از دانشگاه و دریافت مدرک کارشناسی
+										بعد از فارق تحصیلی دوست دارم به حرفه اصلی خودم در زمینه موشن گرافیک بپردازم
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>
+                <div class="full_info_item education" style="display: none; direction: rtl; text-align: right">
+                  <div class="title">تحصیلات</div>
+
+                  <div class="info_wrap">
+                    	<ul>
+                    		<li>
+                    			<div class="sub_title">
+                    				1397-...
+                    			</div>
+
+								<div class="info_item">
+									<div class="info_title">
+										دانشجوی کارشناسی
+									</div>
+									<div class="data">
+										در دانشگاهی واقع در استان تهران تحصیل می کنم
+									</div>
+								</div>
+                    		</li>
+                    		<li>
+                    			<div class="sub_title">
+                    				1397-1386
+                    			</div>
+
+								<div class="info_item">
+									<div class="info_title">
+									دوازده سال تحصیل در مدرسه
+									</div>
+									<div class="data">
+
+									</div>
+								</div>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>
+                <div class="full_info_item contact" style="display: none; direction: rtl; text-align: right">
+                  <div class="title">راه های ارتباطی:</div>
+                  <div class="info_wrap">
+                  	<ul>
+                  		<li>
+                  			<span class="info_q">Email</span>
+                  			<span class="info_a">therezabasiri@gmail.com</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q"></span>
+                  			<span class="info_a"></span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">تلفن همراه:</span>
+                  			<span class="info_a">09033180280</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q"></span>
+                  			<span class="info_a"></span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q"></span>
+                  			<span class="info_a"></span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Twitter</span>
+                  			<span class="info_a">basiri313</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">Instagram</span>
+                  			<span class="info_a">m_rezabasiri</span>
+                  		</li>
+                  		<li>
+                  			<span class="info_q">telegram</span>
+                  			<span class="info_a">basiri78</span>
+                  		</li>
+                  	</ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+
+</body>
+</html>
